@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Confrencing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            background: #071734;
+        }
+
+        .header {
+            height: 100%;
+            width: 100%;
+            background: #072048;
+            position: relative;
+        }
+        nav{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            background: #011334;
+            padding: 10px 0;
+            height: 100%;
+            width: 30;
+        }
+        nav .logo{
+            width: 56px;
+            display: block;
+            margin: 5vb;
+            cursor: pointer;
+        }
+        nav ul{
+            margin-top: 160px;
+        }
+        nav ul li{
+            list-style: none;
+        }
+        nav ul li img{
+            width: 50px;
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            cursor: pointer;
+            opacity: 0.5;
+            border-radius: 10px;
+            transition: opacity 0.5s;
+            background: 0.5s;
+        }
+        nav ul li img:hover{
+            opacity: 1;
+            background: #4d6181;
+        }
+        .container{
+            margin-left: 120px;
+            padding: 0 2.5%;
+        }
+        .top-icons{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 25px 0;
+        }
+        .top-icons img{
+            width: 25px;
+            margin-left: 40px;
+            cursor: pointer;
+        }
+        .row{
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .col-1{
+            flex-basis: 65%;
+        }
+        .col-2{
+            flex-basis: 33%;
+        }
+        .host{
+            width: 100%;
+            border-radius: 15px;
+        }
+        .controls{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .controls img{
+            width: 40px;
+            margin: 20px 10px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .controls .call{
+            width: 70px;
+        }
+        .controls img:hover{
+            transform: translateY(-10px);
+        }
+        .joined{
+            background: #182842;
+            border-radius: 15px;
+            padding: 30px 40px 50px;
+            color: #fff;
+        }
+        .joined div{
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 20px;
+        }
+        .joined img{
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .invite{
+            background: #182842;
+            border-radius: 15px;
+            padding: 30px 40px 50px;
+            color: #fff;
+            margin: 20px;
+        }
+        .invite img{
+            margin-top: 20px;
+            width: 50px;
+            margin-left: 5px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <img src="images/logo.png"
+                alt="" class="logo">
+                <ul>
+                    <li><img src="images/live.png" alt=""></li>
+                    <li>
+                        <img src="images/video.png" alt="">
+                    </li>
+                    <li>
+                        <img src="images/message.png" alt="">
+                    </li>
+                    <li>
+                        <img src="images/notification.png" alt="">
+                    </li>
+                    <li>
+                        <img src="images/users.png" alt="">
+                    </li>
+                    <li>
+                        <img src="images/setting.png" alt="" >
+                    </li>
+                </ul>
+        </nav>
+        <div class="container">
+            <div class="top-icons">
+                <img src="images/search.png" alt="">
+                <img src="images/menu.png" alt="">
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <img src="images/image.png" class="host">
+                    <div class="controls">
+                        <img src="images/chat.png" >
+                        <img src="images/disconnect.png" >
+                        <img src="images/call.png" class="call">
+                        <img src="images/mic.png" >
+                        <img src="images/cast.png" >
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="joined">
+                        <p>People Joined</p>
+                        <div>
+                            <img src="images/people-1.png" >
+                            <img src="images/people-2.png" >
+                            <img src="images/people-3.png" >
+                            <img src="images/people-4.png" >
+                            <img src="images/people-5.png" >
+                        </div>
+                    </div>
+                    <div class="invite">
+                        <p>Invite More People</p>
+                        <img src="images/user-1.png">
+                        <img src="images/user-2.png">
+                        <img src="images/user-3.png">
+                        <img src="images/user-4.png">
+                        <img src="images/user-5.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
